@@ -1,116 +1,268 @@
-body{
-    background-color: #A1C2F1;
-}
-.head1{
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-.list li{
-    display: flex;
-    float: right;
-    margin-right: 70px;
-    margin-top: 10px;
-}
-.img{
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-}
-.list a{
-    text-decoration: none;
-    color: #0A6EBD;
-}
-.list a:hover{
-    text-decoration: underline;
-}
-.h1{
-    display: flex;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 250px;
-    margin-left: 50px;
-    color: #CD1818;
-}
-.h2{
-    display: flex;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 340px;
-    margin-left: 50px;
-    color: #0A6EBD;
-}
-.text img{
-    position: absolute;
-    right: 0;
-    height: 550px;
-    width: 400px;
-    top: 170px;
-    margin-right: 20px;
-}
-.s1{
-    margin-top: 700px;
-    display: flex;
-    background-color: #A1C2F1;
-    position: absolute;
-    left: 0;
-    right: 0;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Montserrat:wght@300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; 
+
+red #c00021, blue #002962;*/
+
+:root {
+  /* --blue: #002962; */
+  --blue: #c00021;
+  --red: #002962;
+  --white: #fff;
+  --bg-color: lightblue;
+  --black: #000;
 }
 
-.h3{
-    color:#CD1818;
-    position: absolute;
-    right: 450px;
-    font-size: 60px;
-    margin-top: 100px;
-}
-.text1{
-    color: #0A6EBD;
-    position: absolute;
-    right: 30px;
-    margin-top: 250px;
-    display: flex;
-    flex-direction: column;
-}
-.image1{
-    margin-top: 100px;
-    margin-left: 55px;
-}
-.image1 img{
-    width: 490px;
-    height: 400px;
-    margin-top: 50px;
-}
-.bg{
-    background-color: #CD1818;
-    width: 600px;
-    margin-left: 50px;
-    height: 500px;
-    box-shadow: 5px 5px 5px 5px;
-
-}
-.s2{
-    position: absolute;
-    bottom: 0;
-}
-footer{
-    background-color: #CD1818;
-    color: #fff;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    bottom: -770px;
-    right: 0;
-    left: 0;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+body {
+  background-color: var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  background-color: var(--white);
+}
 
+.nav-link {
+  text-decoration: none;
+  color: var(--blue);
+  padding-top: 1.2rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.15rem;
+}
+.logo {
+  margin-left: 0.5rem;
+
+  width: auto;
+}
+li {
+  margin: 1rem;
+}
+/* Define a base font size for the entire page */
+
+.intro-header,
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 0 0 3rem 0; /* 100px / 16px = 6.25rem */
+}
+
+.intro-header img {
+  max-width: 50rem;
+  height: auto;
+}
+
+.h1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 1.25rem; /* 20px / 16px = 1.25rem */
+  font-size: 2rem;
+}
+
+.h1 {
+  /* 24px / 16px = 1.5rem */
+  margin: 0;
+  color: var(--blue);
+}
+
+.blue-header {
+  /* 36px / 16px = 2.25rem */
+  margin: 0;
+  color: var(--red);
+}
+
+.intro-img {
+  width: 50rem;
+}
+
+.intro--title {
+  font-size: 2.2rem;
+  color: var(--blue);
+}
+
+.intro--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro--text {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--red);
+}
+
+.attr-title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: var(--red);
+  margin: 1em 0;
+  font-size: 3rem;
+}
+
+.books {
+  display: flex;
+
+  text-align: center;
+}
+
+.books-img {
+  width: 50rem;
+}
+
+.attr-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.h4-attr {
+  font-size: 2.5rem;
+  color: var(--blue);
+  margin: 0.4rem;
+}
+
+.p-attr {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  line-height: 1.5;
+  color: var(--red);
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #1976d2;
+}
+
+.btn1:focus {
+  outline: none;
+  background-color: #1565c0;
+}
+
+.attr-content-meetings,
+.native,
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetings,
+.attr-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-right: 1.5rem;
+}
+
+.attr-bg-img,
+.attr-bg-img2 {
+  padding: 2rem 0;
+  width: 50rem;
+  height: auto;
+}
+
+.native-speakers {
+  color: var(--blue);
+  font-size: 2.2rem;
+}
+
+.native-p {
+  font-size: 1.2rem;
+  padding: 0.4rem 0;
+  line-height: 1.5;
+  color: var(--red);
+}
+
+.location {
+  margin: 1em;
+}
+.location-map {
+  width: 100%;
+}
+
+.location-title,
+.references-title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: var(--blue);
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+.results {
+  margin-bottom: 2em;
+}
+.container-text {
+  font-size: 1.1rem;
+  margin: 0.7rem;
+  color: var(--red);
+}
+
+.results-content {
+  padding-right: 3rem;
+  margin-right: 1.5em;
+  margin-bottom: 1.2rem;
+}
+
+.results-title {
+  font-size: 2.2rem;
+  color: var(--blue);
+  text-align: center;
+}
+
+.results-p {
+  color: var(--red);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.footer {
+  height: 30vh;
+  width: 100%;
+  background-color: #023047;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
