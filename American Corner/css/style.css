@@ -20,12 +20,16 @@ red #c00021, blue #002962;*/
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  display: flexbox;
 }
 
 body {
   background-color: var(--bg-color);
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+}
+.header {
+  width: 100%;
 }
 .nav {
   display: flex;
@@ -65,9 +69,10 @@ li {
 
 .intro-header,
 .intro {
+  width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 0 3rem 0; /* 100px / 16px = 6.25rem */
+  padding: 0; /* 100px / 16px = 6.25rem */
 }
 
 .intro-header img {
@@ -102,7 +107,8 @@ li {
 }
 
 .intro-img {
-  width: 50rem;
+  width: 40rem;
+  margin-right: 5rem;
 }
 
 .intro--title {
@@ -118,10 +124,11 @@ li {
 }
 
 .intro--text {
-  margin: 2rem 0;
+  margin: 0 2rem;
   font-size: 1.2rem;
   line-height: 1.5;
   color: var(--red);
+  padding: 0 2rem;
 }
 
 .attr-title {
@@ -186,11 +193,17 @@ li {
 }
 
 .attr-content-meetings,
-.native,
 .results {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -2rem;
+}
+.native {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4rem;
 }
 
 .meetings,
@@ -201,14 +214,18 @@ li {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  margin-right: 1.5rem;
+  margin-right: 3rem;
 }
 
 .attr-bg-img,
 .attr-bg-img2 {
   padding: 2rem 0;
-  width: 50rem;
+  width: 40rem;
   height: auto;
+}
+.attr-bg-img2 {
+  padding-right: 2.3rem;
+  margin-left: 6rem;
 }
 
 .native-speakers {
@@ -242,8 +259,18 @@ li {
 
 .references {
   margin-top: 3rem;
+  background-color: white;
+  margin: 0 1rem 0 1rem;
 }
+.references-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .results {
+  margin-top: 3rem;
   margin-bottom: 2em;
 }
 .container-text {
@@ -259,6 +286,7 @@ li {
 }
 
 .results-title {
+  margin: 2rem;
   font-size: 2.2rem;
   color: var(--blue);
   text-align: center;
